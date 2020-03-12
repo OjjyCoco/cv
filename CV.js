@@ -39,13 +39,14 @@ const sur_mon_cv = document.querySelector("#présentation h3");
 
     rocketlaunchbtn.addEventListener("click", function(e){
         rocket.style.visibility = "visible";
+        rocketlaunchbtn.innerHTML = "<i class='fas fa-exclamation-triangle'></i> DÉCOLLAGE <i class='fas fa-exclamation-triangle'></i>";
         e.target.style.transformOrigin = "center";
         e.target.style.color = "white";
         e.target.style.backgroundImage = "-webkit-linear-gradient(right, #b92b27, #1565c0)";
 
         setTimeout(function(){
             e.target.style.transform = "translateX(90%) rotate(90deg)";
-        }, 800)
+        }, 1250)
 
         setTimeout(function(){
             e.target.style.top = "150%";
@@ -58,7 +59,7 @@ const sur_mon_cv = document.querySelector("#présentation h3");
 
 
 (function sale(){
-    
+
     liste_titre_categ[0].addEventListener("click", function(e){
 
         for(var categ of liste_categ){
