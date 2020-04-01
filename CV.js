@@ -23,15 +23,14 @@ let hauteur_fenêtre = window.innerHeight;
 if(largeur_fenêtre > 900){
     apparition_text()
     rocket_btn()
-    sale()
+    afficher_categ()
     changer_photo()
     afficher_sidebar_ou_pas()
-    lien_non_existant()
 }
 else if(largeur_fenêtre < 900){
     afficher_sidebar_ou_pas_petite_reso()
     apparition_text_petite_reso()
-    sale_petite_reso()
+    afficher_categ_petite_reso()
 }
 
 
@@ -85,46 +84,24 @@ function rocket_btn(){
 
 }
 
-
-function sale(){
-
-    liste_titre_categ[0].addEventListener("click", function(e){
-        for(var categ of liste_categ){
-            categ.style.right = "-100%";
-        };
-        liste_categ[0].style.right = "0%";
-    });
-
-    liste_titre_categ[1].addEventListener("click", function(e){
-        for(var categ of liste_categ){
-            categ.style.right = "-100%";
-        };
-        liste_categ[1].style.right = "0%";
-    });
-
-    liste_titre_categ[2].addEventListener("click", function(e){
-        for(var categ of liste_categ){
-            categ.style.right = "-100%";
-        };
-        liste_categ[2].style.right = "0%";
-    });
-
-    liste_titre_categ[3].addEventListener("click", function(e){
-        for(var categ of liste_categ){
-            categ.style.right = "-100%";
-        };
-        liste_categ[3].style.right = "0%";
-    });
-
-
+function afficher_categ(){
+    for(let i = 0; i < 4; i++){
+        ((i) => {
+            liste_titre_categ[i].addEventListener("click", function(){
+                for(var categ of liste_categ){
+                    categ.style.right = "-100%";
+                };
+                liste_categ[i].style.right = "0%";
+            })
+        })(i)
+    }
 
     for(var fleche of fleche_pr_cacher){
-        fleche.addEventListener("click", function(e){
+        fleche.addEventListener("click", (e) => {
             e.currentTarget.parentElement.style.right = "-100%";
         });
     };
 }
-
 
 function changer_photo(){
 
@@ -159,18 +136,6 @@ function afficher_sidebar_ou_pas(){
 
     list_icon.addEventListener("click", function(){
         container.style.transform = "translateX(-180px) scale(0.9)";
-    });
-}
-
-
-
-function lien_non_existant(){
-    lien_linkedin.addEventListener("click", function(e){
-        alert("Malheureusement, mon profil LinkedIn n'existe pas encore... Mais ça ne saurait tarder !")
-    });
-
-    lien_portefolio.addEventListener("click", function(e){
-        alert("Malheureusement, mon porte-folio n'existe pas encore... Contacte-moi si c'est urgent !")
     });
 }
 
@@ -213,8 +178,8 @@ function apparition_text_petite_reso(){
     });
 }
 
-
-function sale_petite_reso(){
+/* On garde la version sale car on ajoute un overflow différent pour certaines catégories*/
+function afficher_categ_petite_reso(){
 
     liste_titre_categ[0].addEventListener("click", function(e){
         btn_choices_div.style.display = "none";
