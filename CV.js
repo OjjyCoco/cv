@@ -16,6 +16,7 @@ const fleche_pr_cacher = document.querySelectorAll(".fleche_pr_cacher");
 const h1 = document.querySelector("#présentation h1");
 const sur_mon_cv = document.querySelector("#présentation h3");
 const bodyy = document.querySelector("body");
+const outer_loader = document.getElementById("outer_loading");
 let largeur_fenêtre = window.innerWidth;
 let hauteur_fenêtre = window.innerHeight;
 
@@ -26,6 +27,7 @@ if(largeur_fenêtre > 900){
     afficher_categ()
     changer_photo()
     afficher_sidebar_ou_pas()
+    loader()
 }
 else if(largeur_fenêtre < 900){
     afficher_sidebar_ou_pas_petite_reso()
@@ -35,6 +37,14 @@ else if(largeur_fenêtre < 900){
 
 
 /* Normal screen */
+
+function loader(){
+
+    window.addEventListener("load", function(){
+        outer_loader.style.display = "none";
+    });
+
+}
 
 function apparition_text(){
 
@@ -124,18 +134,24 @@ function changer_photo(){
 }
 
 function afficher_sidebar_ou_pas(){
+    container.style.transform = "translateX(0) scale(1)"
 
     rocketlaunchbtn.addEventListener("click", function(){
         container.style.transform = "translateX(-180px) scale(0.9)";
+        list_icon.style.display = "block";
     });
 
     croix.addEventListener("click", function(){
         container.style.transform = "translateX(0) scale(1)";
-        list_icon.style.display = "block";
     });
 
     list_icon.addEventListener("click", function(){
-        container.style.transform = "translateX(-180px) scale(0.9)";
+        if(container.style.transform == "translateX(-180px) scale(0.9)"){
+            container.style.transform = "translateX(0) scale(1)"
+        }
+        else{
+            container.style.transform = "translateX(-180px) scale(0.9)"
+        }
     });
 }
 

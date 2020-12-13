@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CV</title>
+    <title>Nathan Heckmann</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CV.css" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CVtel.css" />
@@ -14,6 +14,9 @@
     <header>
 
     </header>
+    <div id="outer_loading">
+        <div class="loading"></div>
+    </div>
 
     <div id="btn_choices">
         <button type="button" id="cross"><i class="fas fa-times"></i></button>
@@ -30,7 +33,7 @@
                 <div id="photo_div"></div>
                 <div style="position: relative; top: -10%;">
                     <h1 id="Nom">Nathan HECKMANN</h1></br>
-                    <p><i class="fas fa-map-marker-alt"></i> 57565 NIDERVILLER</br>18 ans</br><i class="far fa-address-card"></i> Permis B</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 57565 NIDERVILLER</br>19 ans</br><i class="far fa-address-card"></i> Permis B</p>
                 </div>
             </div>
 
@@ -41,7 +44,7 @@
                         <h3>sur mon CV en ligne</h3></br>
                         <p>Bonjour !</p></br><p>Ce CV en ligne vient compléter la version papier. C'est pourquoi il propose plus de contenu, comme des liens interactifs qui vous donneront de plus amples et précises informations.</p></br>
                         <p>J'ai décidé de créer cette version en ligne pour faciliter l'exposition et la transmission du CV. En effet, un lien cliquable est plus simple que l'envoi d'un e-mail contenant une pièce jointe (même si cela ne consitue pas une démarche infaisable).</br>
-                        Ce Web-CV vient aussi illustrer quelques-unes de mes notions en terme de développement Web. Si vous désirez en savoir plus, je vous propose de vous rediriger vers mon <a href="https://portfolio-nathanh.netlify.com/" id="lien_portefolio" target="_blank">Porte-folio</a> WEB !</p></br><p>Nathan</p>
+                        Ce Web-CV vient aussi illustrer quelques-unes de mes notions en terme de développement Web. Si vous désirez en savoir plus, je vous propose de vous rediriger vers mon <a href="https://portfolio-nathanh.netlify.app/" id="lien_portefolio" target="_blank">Porte-folio</a> WEB ! (Développement en pause)</p></br><p>Nathan</p>
                     </div>
 
                     <button type="button" id="list_icon_btn"><i class="fas fa-bars"></i></button>
@@ -59,32 +62,40 @@
                             <legend>Depuis Septembre 2019</legend></br>
                             <h3><i class="fas fa-book"></i> ÉCOLE D'INGÉNIEURS AÉRONAUTIQUE ET SPATIALE IPSA, IVRY-SUR-SEINE (94)</h3>
                             <img src="IPSAlogo.png" alt="logo IPSA" width="125px">
-                            <p>Première année de préparation intégrée (Mathématiques, Physique, Système numériques et informatiques, Électronique, Humanités).</p>
-                            <a href="https://www.ipsa.fr/" target="_blank">Lien de l'école</a></br>
+                            <p>
+                                <li><strong>Première</strong> année de préparation intégrée (Mathématiques, Physique, Informatique et programmation, Électrocinétique, Aéronautique, RDM, Humanités).</li>
+                                <li><strong>Deuxième</strong> année de préparation intégrée (Nouvelles matières : Électromagnétisme, Physique de l'univers, Thermodynamique, Mécanique des fluides).</li>
+                            </p>
+                            <a href="https://www.ipsa.fr/" target="_blank">Lien de l'école</a></br></br>
                         </fieldset>
                         <fieldset>
                             <legend>Juin 2019</legend></br>
                             <h3><i class="fas fa-graduation-cap"></i> BACCALAUREAT SCIENTIFIQUE S-SVT, SPÉCIALITÉ PHYSIQUE-CHIMIE, LYCÉE SAINT-ANTOINE, PHALSBOURG (57)</h3>
                             <p>Mention assez-bien.</p>
                             <img src="STAlogo.png" alt="logo Saint-Antoine" width="150px"></br>
-                            <a href="http://www.saintantoinephalsbourg.fr/" target="_blank">Lien de l'école</a></br>
+                            <a href="http://www.saintantoinephalsbourg.fr/" target="_blank">Lien de l'école</a></br></br>
                         </fieldset>
                         <fieldset>
                             <legend>Juin 2018</legend></br>
                             <h3><i class="fas fa-plane"></i> BREVET D'INITIATION A L'AÉRONAUTIQUE</h3></br>
-                            <p>Candidat libre, mention bien.</p></br><a href="https://fr.wikipedia.org/wiki/Brevet_d'initiation_a%C3%A9ronautique" target="_blank">Qu'est-ce que le B.I.A ?</a></br>
+                            <p>Candidat libre, mention bien.</p></br><a href="https://fr.wikipedia.org/wiki/Brevet_d'initiation_a%C3%A9ronautique" target="_blank">Qu'est-ce que le B.I.A ?</a></br></br>
                         </fieldset>
                         <fieldset>
                             <legend>INFORMATIQUE</legend></br>
                             <h3><i class="fas fa-laptop-code"></i> LANGAGES INFORMATIQUES</h3></br>
                             <p><li>Maîtrise des langages de développement WEB: HTML5, CSS3, JavaScript:
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li></br>
-                            <img src="WEBlogo.png" alt="logo HTML CSS JS" width="150px"></p></br>
-                            <p><li>Bonne maîtrise en langage de programmation Python:
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li></p>
-                            <img src="PYlogo.png" alt="logo Python" width="150px"></br></br>
+                            <img src="WEBlogo.png" alt="logo HTML CSS JS" width="200px"></p></br>
+                            <br><li>Bonne maîtrise en langage de programmation Python:
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li></br>
+                            <img src="PYlogo.png" alt="logo Python" width="100px"></p></br>
+                            <h3><i class="fas fa-laptop-code"></i> LOGICIELS INFORMATIQUES</h3></br>
                             <p><li>Bonnes notions du Pack Office:
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></br><img src="OFFICElogo.png" alt="logo Office" width="150px"></li></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></br></br><img src="OFFICElogo.png" alt="logo Office" width="150px"></li></br></p>
+                            <p><li>Bonne maîtrise du logiciel de conception par ordinateur CATIA:
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></br></br><img src="CATIAlogo.jpg" alt="logo CATIA" width="150px"></li></br></p>
+                            <p><li>Bonne notions d'utilisation de la plateforme GitHub:
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></br></br><img src="GITHUBlogo.png" alt="logo CATIA" width="100px"></li></br></p>
                         </fieldset>
                         <fieldset>
                             <legend>LANGUES</legend></br>
@@ -93,7 +104,7 @@
                             <p>Bonne maîtrise, préparation au TOEIC à l'IPSA.</p></br>
 
                             <h3>ALLEMAND</h3>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                             <p>Niveau intermediaire B1, seconde langue vivante au BAC, séjours linguistiques.</p></br>
                         </fieldset>
                     </div>
@@ -108,13 +119,13 @@
                         <fieldset>
                             <legend>2017</legend></br>
                             <h3>STAGE DE SECONDE, CLINIQUE VETERINAIRE HEILIGENMATT <i class="fas fa-cat"></i>, PHALSBOURG (57)</h3>
-                            <a href="https://www.vet-heiligenmatt-pha.fr/" target="_blank">Site de la clinique</a>
+                            <a href="https://www.vet-heiligenmatt-pha.fr/" target="_blank">Site de la clinique</a></br></br>
                         </fieldset>
                         <fieldset>
                             <legend>2016</legend>
-                            <h3>STAGE DE TROISIEME, EN HOTELLERIE, <i class="fas fa-hotel"></i> HOTEL 4 ÉTOILES COUR DU CORBEAU A STRASBOURG (67)</h3>
-                            <img src="HOTELlogo.png" alt="logo Cour du Corbeau" width="150px"></br>
-                            <a href="https://www.cour-corbeau.com/" target="_blank">Site de l'hôtel</a>
+                            <h3>STAGE DE TROISIEME, EN HOTELLERIE, <i class="fas fa-hotel"></i> HOTEL 4 ÉTOILES COUR DU CORBEAU A STRASBOURG (67)</h3></br>
+                            <img src="HOTELlogo.png" alt="logo Cour du Corbeau" width="200px"></br>
+                            <a href="https://www.cour-corbeau.com/" target="_blank">Site de l'hôtel</a></br></br>
                         </fieldset>
 
                     </div>
@@ -125,14 +136,15 @@
                             <legend>CONCEPTION</legend></br>
                             <i class="fas fa-cogs"></i></br>
                             <li>Développement et optimisation de sites Internet</li></br>
-                            <li>Conception de circuits électroniques, mini-robots grâce aux microcontrôleurs Arduino (Voiture Radio-commandée en cours de projet)</li>
+                            <li>Conception de circuits électroniques, mini-robots grâce aux microcontrôleurs Arduino)</li></br>
                             <img src="ARDlogo.png" alt="logo Arduino" width="125px"></br>
                         </fieldset>
                         <fieldset>
                             <legend>SPORT</legend></br>
                             <h3><i class="fas fa-futbol"></i> FOOTBALL</h3>
-                            <p>Pratique du football en club à partir de 6ans. Membre de l'association sportive de football à l'IPSA.</p>
-                            <p>Stages d'été aux centres de formation de Metz et Haguenau.</p></br>
+                            <li>Pratique du football en club dès l'âge de 6ans.</li>
+                            <li>Membre de l'association sportive de football à l'IPSA et <strong>Entraîneur</strong> de l'équipe lors de l'année scolaire 2020-2021 </li>
+                            <li>Stages d'été aux centres de formation de Metz et Haguenau.</li></br>
                             <h3><i class="fas fa-skiing"></i> SPORT D'HIVER</h3>
                             <p>Pratique du snowboard une semaine par an</p></br>
                             <h3>AUTRES</h3>
@@ -142,15 +154,16 @@
                         <fieldset>
                             <legend>VOYAGES</legend></br>
                             <i class="fas fa-route"></i>
-                            <p>Voyages dans des pays américains (Colombie, République dominicaine, États-Unis, Canada)</p>
-                            <p>nord-africains (Égypte, Maroc)</p>
-                            <p>et européens (Autriche, Espagne, Grèce, Angleterre).</p></br>
+                            <p>Voyages dans certains pays :</br></p>
+                            <li>Américains (Colombie, République dominicaine, États-Unis, Canada)</li>
+                            <li>Nord-africains (Égypte, Maroc)</li>
+                            <li>Européens (Autriche, Espagne, Grèce, Angleterre).</li></br>
                         </fieldset>
                         <fieldset>
                             <legend>JEUX</legend></br>
                             <p><i class="fas fa-chess-knight"></i> Pratique des échecs en classe de seconde</p>
                             <p><i class="fas fa-gamepad"></i> Jeux vidéos</p>
-                            <img src="LOLlogo.png" alt="logo League of Legends" width="150px">
+                            <img src="HSlogo.png" alt="logo League of Legends" width="200px">
                         </fieldset>
 
                     </div>
@@ -161,13 +174,13 @@
                             <legend>INFORMATIONS</legend></br>
                             <p><i class="fas fa-phone-alt"></i> 06.23.24.87.79</p></br>
                             <p><i class="fas fa-at"></i> nathan.heckmann@ipsa.fr</p></br>
-                            <p><i class="fab fa-linkedin"></i><a id="lien_linkedin"> Lien profil LinkedIn</a> (bientôt disponible)</p></br>
-                            <p><i class="fas fa-map-marker-alt"></i> 57565 NIDERVILLER </br> Contactez-moi pour plus d'information à propos de mon addresse postale.</p></br>
+                            <p><i class="fab fa-linkedin"></i> Lien profil LinkedIn (bientôt disponible)</p></br>
+                            <p><i class="fas fa-map-marker-alt"></i> 57565 NIDERVILLER </br></p></br>
                         </fieldset>
                         <fieldset>
                             <legend>MISE A JOUR</legend></br>
-                            <p><i class="fas fa-file-upload"></i> Dernière actualisation du CV en ligne: Mars 2020</p></br>
-                            <p><i class="fas fa-plus-circle"></i> Création du CV en ligne: Mars 2020</p></br>
+                            <p><i class="fas fa-file-upload"></i> Dernière actualisation du CV en ligne : Novembre 2020</p></br>
+                            <p><i class="fas fa-plus-circle"></i> Création du CV en ligne : Mars 2020</p></br>
                         </fieldset>
 
                     </div>
