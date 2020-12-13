@@ -33,6 +33,7 @@ else if(largeur_fenêtre < 900){
     afficher_sidebar_ou_pas_petite_reso()
     apparition_text_petite_reso()
     afficher_categ_petite_reso()
+    loader()
 }
 
 
@@ -156,6 +157,12 @@ function afficher_sidebar_ou_pas(){
 }
 
 /* low resolution */
+
+function loader(){
+
+    outer_loader.style.display = "none";
+
+}
 
 function afficher_sidebar_ou_pas_petite_reso(){
 
