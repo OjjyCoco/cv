@@ -276,7 +276,7 @@ header
     transition: 3.5s cubic-bezier(.65,0,.79,.28);
     top: 120%;
     visibility: hidden;
-    z-index: 6;
+    z-index: 4;
 }
 .categ
 {
