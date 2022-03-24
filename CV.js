@@ -25,7 +25,7 @@ if(largeur_fenêtre > 900){
     apparition_text()
     rocket_btn()
     afficher_categ()
-    changer_photo()
+    // changer_photo()
     afficher_sidebar_ou_pas()
     loader()
 }
@@ -114,25 +114,25 @@ function afficher_categ(){
     };
 }
 
-function changer_photo(){
+// function changer_photo(){
 
-    var liste_photo = [
-    "url('test.png')",
-    "url('test2.png')",
-    ];
+//     var liste_photo = [
+//     "url('test.png')",
+//     "url('test2.png')",
+//     ];
 
-    croix.addEventListener("click", function(){
-        photo.style.backgroundImage = liste_photo[0];
-        backgnd_photo.style.backgroundColor = "rgb(157,41,42)"
-    });
+//     croix.addEventListener("click", function(){
+//         photo.style.backgroundImage = liste_photo[0];
+//         backgnd_photo.style.backgroundColor = "rgb(157,41,42)"
+//     });
 
-    for(var titre of liste_titre_categ){
-        titre.addEventListener("click", function(){
-            photo.style.backgroundImage = liste_photo[1];
-            backgnd_photo.style.backgroundColor = "rgb(141,94,114)"
-        });
-    };
-}
+//     for(var titre of liste_titre_categ){
+//         titre.addEventListener("click", function(){
+//             photo.style.backgroundImage = liste_photo[1];
+//             backgnd_photo.style.backgroundColor = "rgb(141,94,114)"
+//         });
+//     };
+// }
 
 function afficher_sidebar_ou_pas(){
     container.style.transform = "translateX(0) scale(1)"
