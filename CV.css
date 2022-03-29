@@ -318,6 +318,23 @@ fieldset
     margin: 20px 0px;
     width: 95%;
 }
+#english_btn
+{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    color: white;
+
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 15%, rgba(68,68,108,1) 42%, rgba(162,43,43,1) 76%);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
 
 
 
