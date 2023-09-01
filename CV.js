@@ -139,7 +139,7 @@ function afficher_sidebar_ou_pas(){
 
     rocketlaunchbtn.addEventListener("click", function(){
         container.style.transform = "translateX(-180px) scale(0.9)";
-        // list_icon.style.display = "block";
+        list_icon.style.display = "block";
     });
 
     croix.addEventListener("click", function(){
